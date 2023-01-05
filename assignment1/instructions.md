@@ -9,7 +9,7 @@ Part 1 will be done in class. Part 2 is the actual assignment that will be grade
 
 Here, you will build a rule-based sentiment classifier. 
 
-Download Data from [here](./data/SST-2). The directory contains `train.tsv`,  `valid.tsv` and `test.tsv` files denoting the train / validation and test slits of the data.
+Download Data from [here](./data/SST-2). The directory contains `train.tsv`,  `valid.tsv` and `test.tsv` files denoting the train, validation and test splits of the data.
 
 Implement the following methods:
 
@@ -26,4 +26,4 @@ Use the predictions and gold labels to find reviews for which your classifier ma
 6. `main() -> tuple[float, list[str]]`
 Implement the main method that takes in the train and validation splits of the data and returns the accuracy and list of reviews that have incorrect predictions. 
 
-NOTE: Do not `evaluate` on `test.tsv` unless you have finalized with your classifier. 
+NOTE: Do not `evaluate` or look at the `test.tsv` unless you have finalized with your classifier. 
