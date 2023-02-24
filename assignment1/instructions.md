@@ -34,7 +34,7 @@ You still use `train.tsv`, `valid.tsv` and  `test.tsv` files to train, validate 
 
 1. Preprocess all text and sentences in `train.tsv` following the common text processing pipeline of your choice(e.g: text normalization, puctuation and stop words removal, lowercase,  lemmatization and tokenization etc.) Build a dictionary of vocabularies using the words appear in training set. For words not appeared in the dictionary, use a special token '<unk>' to replace. Apply the same processing pipeline to validation and test set. 
 2. Represent each sentence using bag-of-words representation. Write a dataset and dataloader(batched data) to iterate through the whole dataset.
-3. Train a linear classifier using Deep Learning Frameworks of your choice. For example, in PyTorch, you need to  define the network(nn.Linear), loss function(nn.CrossEntropy). And train the network using back propagation(define optimizer=torch.optim.Adam.., opt.zero_grad(), net.backward(), opt.step()...)). Perform cross-validation every epoches, and select the best model to save. For Pytorch, you can check tutorials(https://pytorch.org/tutorials/beginner/basics/intro.html).
+3. Train a linear classifier using Deep Learning Frameworks of your choice. For example, in PyTorch, you need to  define the network(nn.Linear), loss function(nn.CrossEntropy). And train the network using back propagation(define optimizer=torch.optim.Adam.., opt.zero_grad(), net.backward(), opt.step()...)). Perform validation every epoches, and select the best model to save. For Pytorch, you can check tutorials(https://pytorch.org/tutorials/beginner/basics/intro.html).
 4. Evaluation: Define the metrics, show your classification accuracy, precision and recall on validation set and test set.
 
   
